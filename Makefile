@@ -1,9 +1,10 @@
 .PHONY: pg dump import
+include .env
 
-PG_CONTAINER_NAME = skeleton-postgre
-PHP_CONTAINER_NAME = skeleton-php
-NGINX_CONTAINER_NAME = skeleton-nginx
-DB_NAME = skeleton_db
+PG_CONTAINER_NAME = ${PROJECT_NAME}-postgre
+PHP_CONTAINER_NAME = ${PROJECT_NAME}-php
+NGINX_CONTAINER_NAME = ${PROJECT_NAME}-nginx
+DB_NAME = ${DB_DATABASE}
 PG_USER = root
 PG_PASS = root
 
