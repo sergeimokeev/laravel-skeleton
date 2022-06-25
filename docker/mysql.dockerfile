@@ -1,3 +1,3 @@
-FROM mysql:5.7
+FROM mysql:8.0
 
 RUN apt-get update && apt-get install make
